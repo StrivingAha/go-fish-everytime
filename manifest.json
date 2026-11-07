@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "FishEverytime · 人脸隐私守护",
+  "version": "1.1.1",
+  "description": "本地人脸识别、离席保护及网页恢复记录",
+  "minimum_chrome_version": "120",
+  "permissions": ["storage", "tabs", "alarms"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "打开人脸隐私守护" },
+  "content_security_policy": { "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'none'; connect-src 'self';" }
+}
